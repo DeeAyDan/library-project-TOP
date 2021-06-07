@@ -17,7 +17,7 @@
     </div>
 
     <div id='buttondiv'>
-        <button id="main">Add book to library.</button>  
+        <button id="main" onclick="openForm()">Add book to library.</button>  
     </div>
 
     <div id="tablediv">
@@ -41,11 +41,10 @@
 
     <form id='submitform'>
       <div id="formtext">Enter informations about the book.</div>
-      <input type="text"><br>
-      <input type="text"><br>
-      <input type="text"><br>
-      <input type="checkbox"><br>
-      <input type="submit">
+      <input type="text" placeholder="Book's title"><br>
+      <input type="text" placeholder="Author of the book"><br>
+      <input type="text" placeholder="Length of the book in pages"><br>
+      <input type="submit" value="Add Book">
     </form>
 
   <script src="script.js"></script>

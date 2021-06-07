@@ -1,3 +1,8 @@
+function openForm() {
+    document.getElementById("submitform").style.display = "block";
+  }
+
+
 let myLibrary = [];
 
 function Book(title, author, pages, read = ''){

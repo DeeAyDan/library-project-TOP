@@ -144,8 +144,9 @@ table {
     width: 25%;
     top: 25%;
     right: auto;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(170, 170, 170, 0.81);
     left: 37%;
+    display: none;
 }
 
 #formtext{
@@ -153,6 +154,7 @@ table {
     text-align: center;
     font-size: 2vw;
     font-weight: bolder;
+    margin-top: 5%;
 }
 
 input {
