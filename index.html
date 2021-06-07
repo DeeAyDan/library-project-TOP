@@ -17,31 +17,36 @@
     </div>
 
     <div id='buttondiv'>
-        <button id="main">Add book to library.</button>
+        <button id="main">Add book to library.</button>  
     </div>
 
     <div id="tablediv">
       <table>
         <thead>
         <tr>
+          <th>Delete</th>          
           <th>Title</th>
           <th>Author</th>
           <th>Length</th>
           <th>Read</th>
-          <th>Delete</th>
         </tr>
         </thead>
         <tbody>
         <tr id="booklist">
-          <td>asd</td>
-          <td>aa</td>
-          <td>add</td>
-          <td>aa</td>
-          <td>add</td>
+            <td id="tddelete"><button id="deletebutton"></button></td>
         </tr>
         </tbody>
       </table>
     </div>
+
+    <form id='submitform'>
+      <div id="formtext">Enter informations about the book.</div>
+      <input type="text"><br>
+      <input type="text"><br>
+      <input type="text"><br>
+      <input type="checkbox"><br>
+      <input type="submit">
+    </form>
 
   <script src="script.js"></script>
 </body>

@@ -16,14 +16,26 @@ function Book(title, author, pages, read = ''){
 }
 
 const book1 = new Book('Titleee', 'Authorr', 7, true);
-myLibrary.push(book1);
+
 
 function addBookToLibrary() {
-
+    myLibrary.push(book1);
+    displyBooks();
   }
 
+const list = document.querySelector('#booklist');
+
 function displyBooks(){
-    for (let i = 0; i < myLibrary.length; i++){
-        console.table(myLibrary);
-    }
+    const bookTitle = document.createElement('td');
+    bookTitle.textContent = myLibrary[myLibrary.length - 1].title;
+    list.appendChild(bookTitle);
+    const bookAuthor = document.createElement('td');
+    bookAuthor.textContent = myLibrary[myLibrary.length - 1].author;
+    list.appendChild(bookAuthor);
+    const bookPages = document.createElement('td');
+    bookPages.textContent = myLibrary[myLibrary.length - 1].pages;
+    list.appendChild(bookPages);
+    const bookRead = document.createElement('td');
+    bookRead.textContent = myLibrary[myLibrary.length - 1].read;
+    list.appendChild(bookRead);
 }

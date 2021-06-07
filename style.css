@@ -99,14 +99,68 @@ table {
   }
 
   th { 
-    background: rgba(156, 156, 156, 0.315); 
+    background: rgba(66, 66, 66, 0.315); 
     color: rgb(83, 83, 83); 
     font-weight: bold; 
+    text-align: left;
   }
 
   td, th { 
     padding: 6px; 
-    border: 1px solid #ccc; 
-    text-align: left; 
+    border: 0.2vw solid rgb(0, 0, 0); 
     font-size: 1vw;
   }
+
+  td {
+      text-align: center;
+  }
+
+  #tddelete {
+      width: 1vw;
+      height: 2vw;
+  }
+
+  #deletebutton{
+      width: 3vw;
+      height: 3vw;
+      border-width: 0.3vw;
+      border-radius: 50%;
+      border-color: rgb(83, 83, 83);
+      background-image: linear-gradient(45deg, rgb(94, 4, 4), rgba(255,0,0,1));
+      transition: ease-in-out;
+      transition-duration: 30ms;
+  }
+
+  #deletebutton:hover{
+      scale: 1.1;
+  }
+
+#deletebutton:active{
+    scale: 0.9;
+}
+
+#submitform {
+    position: fixed;
+    width: 25%;
+    top: 25%;
+    right: auto;
+    background-color: rgb(0, 0, 0);
+    left: 37%;
+}
+
+#formtext{
+    color: rgb(87, 87, 87);
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 70%;
+}
