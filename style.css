@@ -7,7 +7,7 @@ body {
 
 #settingsdiv{
     width: 20%;
-    height: 20%;
+    height: max-content;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -24,28 +24,19 @@ body {
 }
 
 #main{
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 32px;
+    font-size: 3vw;
     font-weight: bold;
     font-family: initial;
-    padding-top: 50px;
     transition: ease-in-out;
-    transition-duration: 0s;
     transition-duration: 20ms;
-    padding-bottom: 47.5px;
-    padding-top: 47.5px;
-    padding-right: 50px;
-    padding-left: 50px;
     border: solid;
-    border-top-width: medium;
-    border-right-width: medium;
-    border-bottom-width: medium;
-    border-left-width: medium;
     border-width: 10px;
     border-radius: 20px;
-background-image: linear-gradient(gray, white);
+    background-image: linear-gradient(rgb(190, 190, 190), white);
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
 }
 
 .settingsbutton{
@@ -53,7 +44,7 @@ background-image: linear-gradient(gray, white);
     height: 18%;
     margin-top: 5%;
     margin-bottom: 5%;
-    background-image: linear-gradient(#515050, #b0b0b0);
+    background-image: linear-gradient(#949494, #ffffff);
     border-top-width: 0px;
     border-top-style: solid;
     border-left-width: 0px;
@@ -62,8 +53,7 @@ background-image: linear-gradient(gray, white);
     border-bottom-style: solid;
     border-right-width: 0px;
     border-right-style: solid;
-    font-size: larger;
-    font-weight: bold;
+    font-size: 1.9vw;
     font-family: initial;
     border-radius: 15px;
     transition: ease-in-out;
@@ -92,4 +82,27 @@ background-image: linear-gradient(gray, white);
     left: 0px;
     right: 0px;
     position: fixed;
+    margin-top: 2.1%;
 }
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+  }
+
+  tr:nth-of-type(odd) { 
+    background: rgb(209, 209, 209); 
+  }
+
+  th { 
+    background: rgba(156, 156, 156, 0.315); 
+    color: rgb(83, 83, 83); 
+    font-weight: bold; 
+  }
+
+  td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+  }
+
