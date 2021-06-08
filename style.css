@@ -88,6 +88,7 @@ body {
 table { 
     width: 100%; 
     border-collapse: collapse; 
+    display: grid;
   }
 
   tr:nth-of-type(odd) { 
@@ -103,24 +104,26 @@ table {
     color: rgb(83, 83, 83); 
     font-weight: bold; 
     text-align: left;
+    padding: 6px;
   }
 
-  td, th { 
-    padding: 6px; 
+  td, th {  
     border: 0.2vw solid rgb(0, 0, 0); 
     font-size: 1vw;
   }
 
   td {
       text-align: center;
+      font-size: 1.5vw;
+      padding-top: 12px;
   }
 
-  #tddelete {
-      width: 1vw;
+  .tddelete {
+    width: 75.5%;
       height: 2vw;
   }
 
-  #deletebutton{
+  .deletebutton{
       width: 3vw;
       height: 3vw;
       border-width: 0.3vw;
@@ -165,4 +168,9 @@ input {
     margin-top: 1vw;
     margin-bottom: 1vw;
     width: 70%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 5% 23.75% 23.75% 23.75% auto;
 }

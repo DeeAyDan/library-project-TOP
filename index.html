@@ -23,7 +23,7 @@
     <div id="tablediv">
       <table>
         <thead>
-        <tr>
+        <tr class="grid">
           <th>Delete</th>          
           <th>Title</th>
           <th>Author</th>
@@ -31,20 +31,21 @@
           <th>Read</th>
         </tr>
         </thead>
-        <tbody>
-        <tr id="booklist">
-            <td id="tddelete"><button id="deletebutton"></button></td>
-        </tr>
+        <tbody class="booklist">
         </tbody>
       </table>
     </div>
 
     <form id='submitform'>
       <div id="formtext">Enter informations about the book.</div>
-      <input type="text" placeholder="Book's title"><br>
-      <input type="text" placeholder="Author of the book"><br>
-      <input type="text" placeholder="Length of the book in pages"><br>
-      <input type="submit" value="Add Book">
+      <input id="formtitle" type="text" placeholder="Book's title"><br>
+      <input id="formauthor" type="text" placeholder="Author of the book"><br>
+      <input id="formpages" type="text" placeholder="Length of the book in pages"><br>
+      <div style="display: grid; grid-template-columns: auto auto; text-align: center; font-size: 0.7vw; font-weight: bold;">
+      Did you read the book?
+      <input id="formcheck" type="checkbox" style="scale: 2.5;"><br>
+      </div>
+      <input id="formsubmit" type="submit" value="Add Book">
     </form>
 
   <script src="script.js"></script>
