@@ -73,8 +73,26 @@ button{
     background: white;
     text-align: center;}
 .delete-box{
-    padding: 10px;
-    background: #ca5e5ecf;}
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+    background: #c73c3ccf;}
+.read-box{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 5%;
+    background: #5eca67cf;}
+.not-read-box{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 5%;
+        background: #ca5e5ecf;}
 @media only screen and (max-width:1000px) {
     .book-box{
         position:relative;
