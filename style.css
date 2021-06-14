@@ -1,176 +1,141 @@
-body {
-    background-size: 40px 40px;
-    background-image:
-      linear-gradient(to right, grey 1px, transparent 1px),
-      linear-gradient(to bottom, grey 1px, transparent 1px);
-  }
-
-#settingsdiv{
-    width: 20%;
-    height: max-content;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: #40404096;
-    justify-content: center;
-    display: flex;
-}
-
-#buttondiv{
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-}
-
-#main{
-    font-size: 2vw;
-    font-weight: bold;
-    font-family: initial;
-    transition: ease-in-out;
-    transition-duration: 20ms;
-    border: solid;
-    border-width: 0.7vw;
-    border-radius: 5.5vw;
-    background-image: linear-gradient(rgb(190, 190, 190), white);
-    padding-bottom: 7%;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 7%;
-}
-
-.settingsbutton{
-    width: 80%;
-    height: 18%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background-image: linear-gradient(#949494, #ffffff);
-    border-top-width: 0px;
-    border-top-style: solid;
-    border-left-width: 0px;
-    border-left-style: solid;
-    border-bottom-width: 0px;
-    border-bottom-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    font-size: 1.9vw;
-    font-family: initial;
-    border-radius: 15px;
-    transition: ease-in-out;
-    transition-duration: 100ms;
-}
-
-.settingsbutton:hover{
-    scale: 1.2;
-}
-
-#main:hover{
-    scale: 1.1;
-}
-
-.settingsbutton:active{
-    scale: 0.9;
-}
-#main:active{
-    scale: 0.9;
-}
-
-#tablediv{
-    width: 100%;
-    height: 100vh;
-    background-color: #4040404d;
-    left: 0px;
-    right: 0px;
-    position: fixed;
-    margin-top: 2.1%;
-}
-
-table { 
-    width: 100%; 
-    border-collapse: collapse; 
-    display: grid;
-  }
-
-  tr:nth-of-type(odd) { 
-    background: rgba(209, 209, 209, 0.5); 
-  }
-
-  tr:nth-of-type(even) { 
-    background: rgba(241, 241, 241, 0.5); 
-  }
-
-  th { 
-    background: rgba(66, 66, 66, 0.315); 
-    color: rgb(83, 83, 83); 
-    font-weight: bold; 
-    text-align: left;
-    padding: 6px;
-  }
-
-  td, th {  
-    border: 0.2vw solid rgb(0, 0, 0); 
-    font-size: 1vw;
-  }
-
-  td {
-      text-align: center;
-      font-size: 1.5vw;
-      padding-top: 12px;
-  }
-
-  .tddelete {
-    width: 75.5%;
-      height: 2vw;
-  }
-
-  .deletebutton{
-      width: 3vw;
-      height: 3vw;
-      border-width: 0.3vw;
-      border-radius: 50%;
-      border-color: rgb(83, 83, 83);
-      background-image: linear-gradient(45deg, rgb(94, 4, 4), rgba(255,0,0,1));
-      transition: ease-in-out;
-      transition-duration: 30ms;
-  }
-
-  #deletebutton:hover{
-      scale: 1.1;
-  }
-
-#deletebutton:active{
-    scale: 0.9;
-}
-
-#submitform {
-    position: fixed;
-    width: 25%;
-    top: 25%;
-    right: auto;
-    background-color: rgba(170, 170, 170, 0.81);
-    left: 37%;
-    display: none;
-}
-
-#formtext{
-    color: rgb(87, 87, 87);
-    text-align: center;
-    font-size: 2vw;
+body{
+    background:#b6b6b6;}
+#page-title{
+    position: relative;
+    background: #000000;
+    width: 40%;
+    font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+    font-size: 200%;
+    font-style: normal;
     font-weight: bolder;
-    margin-top: 5%;
-}
-
-input {
+    line-height: 68px;
+    text-align: center;
+    color: white;
+    padding: 0 0;
+    left: 3%;
+    top: 3%;
+    box-shadow: 10px 10px 10px 0px gray;
+margin-bottom: 5%;}
+#control-panel{
+    box-shadow: 10px 10px 10px 0px gray;
+    background: #ffffff;
+    position: absolute;
+    width: 30%;
+    right: 5%;
+    top: 3%;}
+.panel-header{
+    background: #000000;
+    color: white;
+    font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+    font-size: 200%;
+    padding: 0 0;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 68px;
+    text-align: center;}
+input{
     display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    width: 70%;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: 5% 23.75% 23.75% 23.75% auto;
-}
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-bottom: 5%;}
+label{
+    display: flex;
+    justify-content: center;}
+#title-input{
+    margin-top: 5%;}
+button{
+    position: relative;
+    width: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    border: none;
+    height: 50px;
+    font-size: medium;}
+#display{
+    position: relative;
+    box-shadow: 10px 10px 10px 0px gray;
+    width: 55%;
+    left: 3%;}
+#display-header{
+    background: #000000;
+    color: white;}
+.book-box{
+    position:relative;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: 23.3%;
+    box-shadow: 10px 10px 10px 0px gray;
+    background: white;
+    text-align: center;}
+.delete-box{
+    padding: 10px;
+    background: #ca5e5ecf;}
+@media only screen and (max-width:1000px) {
+    .book-box{
+        position:relative;
+        float: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        width: 40%;
+        box-shadow: 10px 10px 10px 0px gray;
+        text-align: center;}
+    #page-title{
+        width: 45%;
+        font-size: 36px;
+    }
+    #control-panel{
+        width: 45%;
+    }
+    #display{
+        width: 45%;
+        top: 25%
+    }}
+@media only screen and (max-width:500px) {
+    #page-title{
+        width: 90%;
+        left: 5%;
+    }
+    #control-panel{
+        position: relative;
+        margin-bottom: 5%;
+        width: 90%;
+        top: 20%;
+        left: 5%;
+    }
+    #display{
+        width: 90%;
+        top: 85%;
+        left: 5%;
+    }}
+@media only screen and (max-width:300px) {
+    #page-title{
+        position: relative;
+        font-size: 150%;
+    }
+    #control-panel{
+        position: relative;
+        margin-top: 20px;
+        font-size: 70%;
+    }
+    #display{
+        position: relative;
+        margin-top: 20px;
+        font-size: 70%;
+    }
+    .book-box{
+        position:relative;
+        float: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        width: 90%;
+        box-shadow: 5px 5px 5px 0px gray;
+        text-align: center;}}

@@ -12,42 +12,27 @@
 </head>
 
 <body>
-    <div id="settingsdiv">
-        <button class="settingsbutton">Dark Theme</button>
-    </div>
 
-    <div id='buttondiv'>
-        <button id="main" onclick="openForm()">Add book to library.</button>  
-    </div>
-
-    <div id="tablediv">
-      <table>
-        <thead>
-        <tr class="grid">
-          <th>Delete</th>          
-          <th>Title</th>
-          <th>Author</th>
-          <th>Length</th>
-          <th>Read</th>
-        </tr>
-        </thead>
-        <tbody class="booklist">
-        </tbody>
-      </table>
-    </div>
-
-    <form id='submitform'>
-      <div id="formtext">Enter informations about the book.</div>
-      <input id="formtitle" type="text" placeholder="Book's title"><br>
-      <input id="formauthor" type="text" placeholder="Author of the book"><br>
-      <input id="formpages" type="text" placeholder="Length of the book in pages"><br>
-      <div style="display: grid; grid-template-columns: auto auto; text-align: center; font-size: 0.7vw; font-weight: bold;">
-      Did you read the book?
-      <input id="formcheck" type="checkbox" style="scale: 2.5;"><br>
+  <div id="page-title">Your library!</div>
+  <div id="control-panel">
+    <div class="panel-header">Control Panel</div>
+    <input id="title-input" placeholder="Book's title...">
+    <input id="author-input" placeholder="Book's author...">
+    <input id="pages-input" type="number" placeholder="Book's number of pages...">
+    <label for="read">Read the book</label>
+    <input type="checkbox" id="read" value="read">
+    <button id="empty-button" style="background:#ca5e5ecf">Empty library</button><button id="add-button" style="background: #4cc85a8a;">Add book</button>
+  </div>
+  <div id="display">
+    <div class="panel-header">Your books</div>
+      <div class="book-box">
+        <div>Lord of the rings</div>
+        <div>Arthur</div>
+        <div>659 pages</div>
+        <input type="checkbox">
+        <div class="delete-box">DELETE</div>
       </div>
-      <input id="formsubmit" type="submit" value="Add Book">
-    </form>
-
+  </div>
   <script src="script.js"></script>
 </body>
 
