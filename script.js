@@ -53,8 +53,6 @@ class Book {
             }
         })
     }
-
-    
 }
 
 const title = document.querySelector('#title-input');
@@ -62,9 +60,14 @@ const author = document.querySelector('#author-input');
 const pages = document.querySelector('#pages-input');
 const read = document.querySelector('#read');
 const addButton = document.querySelector('#add-button');
+const reload = document.querySelector('#empty-button');
 
+reload.addEventListener('click', function(e){
+    location.reload()
+})
 
 const display = document.querySelector('#display');
+
 addButton.addEventListener('click', function(e){
     const book = new Book(title.value, author.value, pages.value, read.checked)
     book.displayBook();
